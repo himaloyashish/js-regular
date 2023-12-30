@@ -63,16 +63,16 @@ const fizzBuzz = (numbers) => {
             // console.log(`${i} is fizzBuzz`);
         } else if (i % 3 === 0) {
             //   console.log(`${i} is fizz`);
-            
-        }else if( i % 5=== 0){
+
+        } else if (i % 5 === 0) {
             //  console.log(i, `${i} is Buzz`);
-            
+
         }
-        
+
     }
 }
 
-const numChecker =  fizzBuzz(100)
+const numChecker = fizzBuzz(100)
 // console.log(numChecker);
 
 
@@ -86,8 +86,8 @@ const duplicate = [
     NaN
 ]
 
-const checkDup= duplicate.filter((elm)=>{
-    if(elm){
+const checkDup = duplicate.filter((elm) => {
+    if (elm) {
         return true;
     }
     else {
@@ -99,22 +99,22 @@ const checkDup= duplicate.filter((elm)=>{
 
 // truthy value in object;
 const obj = {
-    A:"Ashish",
-    B:"Ball",
-    C:"Cat",
-    D:"Doll",
+    A: "Ashish",
+    B: "Ball",
+    C: "Cat",
+    D: "Doll",
     E: undefined,
     F: false
 }
 
-const truthy = function (obj){
+const truthy = function (obj) {
 
-    for ( let i in obj){
-        if(!obj[i]){
+    for (let i in obj) {
+        if (!obj[i]) {
             delete obj[i];
         }
     }
-    
+
     return obj
 }
 
@@ -125,4 +125,21 @@ person.lastName = "Doe";
 person.age = 50;
 person.eyeColor = "blue";
 
-console.log(person);
+// console.log(person);
+
+
+// constructor with function
+
+function Person(first, last, age) {
+    this.firstName = first;
+    this.lastName = last;
+    this.ages = age;
+    this.fullName = function () {
+        
+        return this.firstName + " " + this.lastName
+    }
+}
+
+const Ashish = new Person("Himaloy", "Ashish", 26)
+
+console.log(Ashish.fullName());
