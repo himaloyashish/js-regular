@@ -22,27 +22,27 @@ position = position >= 0 ? position : "Not found";
 function linear(arr, value) {
     const length = arr.length
 
-    for (let i = 0; i< length; i++ ){
-        if(arr[i] === value){
+    for (let i = 0; i < length; i++) {
+        if (arr[i] === value) {
             return i;
         }
     }
-   
+
 
     return "not found";
 }
 
-console.log(linear(['a', 'b', 'c', 'd'], 'd'));
+// console.log(linear(['a', 'b', 'c', 'd'], 'd'));
 
 // problem longest number
 function getLongest(names) {
 
     let longestWord = ""
 
-    for (name of names){
-        if(name.length > longestWord){
+    for (name of names) {
+        if (name.length > longestWord) {
             longestWord = name
-            
+
         }
 
     }
@@ -52,3 +52,77 @@ function getLongest(names) {
 
 // console.log(getLongest(["Himaloy Bala Ashish", "Bithy angle", "Ashish007"]));
 
+
+// the divided  numbers
+
+const fizzBuzz = (numbers) => {
+
+    for (let i = 1; i <= numbers; i++) {
+
+        if (i % 15 === 0) {
+            // console.log(`${i} is fizzBuzz`);
+        } else if (i % 3 === 0) {
+            //   console.log(`${i} is fizz`);
+            
+        }else if( i % 5=== 0){
+            //  console.log(i, `${i} is Buzz`);
+            
+        }
+        
+    }
+}
+
+const numChecker =  fizzBuzz(100)
+// console.log(numChecker);
+
+
+const duplicate = [
+    false,
+    "ok",
+    undefined,
+    "",
+    "basanti",
+    true,
+    NaN
+]
+
+const checkDup= duplicate.filter((elm)=>{
+    if(elm){
+        return true;
+    }
+    else {
+        return false
+    }
+})
+// console.log(checkDup);
+
+
+// truthy value in object;
+const obj = {
+    A:"Ashish",
+    B:"Ball",
+    C:"Cat",
+    D:"Doll",
+    E: undefined,
+    F: false
+}
+
+const truthy = function (obj){
+
+    for ( let i in obj){
+        if(!obj[i]){
+            delete obj[i];
+        }
+    }
+    
+    return obj
+}
+
+// console.log(truthy(obj));
+const person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+
+console.log(person);
