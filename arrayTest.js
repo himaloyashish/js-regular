@@ -14,9 +14,9 @@ const arrayChecker = array1.length == array2.length && array1.every((currentValu
 
 // console.log(arrayChecker);
 
-const duplicate = [1, 34, 5, 4, 5, 45, 5, 3, 4, 5, 3, 2, 6, 4, 6, 3, 7, 8, 2, 6, 9, 5,]
+const duplicates = [1, 34, 5, 4, 5, 45, 5, 3, 4, 5, 3, 2, 6, 4, 6, 3, 7, 8, 2, 6, 9, 5,]
 
-const authenticArray = [...new Set(duplicate)];
+const authenticArray = [...new Set(duplicates)];
 
 const duplicator = [1, 34, 5, 4, 5, 45, 5, 3, 4, 5, 3, 2, 6, 4, 6, 3, 7, 8, 2, 6, 9, 5,]
 
@@ -61,4 +61,27 @@ function getVowel (sentence) {
 
 // console.log(getVowel("I love you bithy"));
 
+const numbers = [12, 2, 34, 4, 5, 3, 5, 3, 2]
 
+const duplicateNumbers = numbers.filter(function(value, index , array){
+    return array.indexOf(value) !== index
+    
+    
+    
+})
+
+// second way to find out the duplicates numbers
+const dipu = ()=>{
+    let count = 0;
+    
+    for(n of duplicateNumbers){
+        console.log(n);
+
+       if(numbers.indexOf(n)  !== duplicateNumbers[n]){
+        count++
+       }
+    }
+    return [count, n];
+}
+
+console.log(dipu());
