@@ -64,9 +64,11 @@ function getVowel (sentence) {
 const numbers = [12, 2, 34, 4, 5, 3, 5, 3, 2]
 
 const duplicateNumbers = numbers.filter(function(value, index , array){
+    //for duplicate value
     return array.indexOf(value) !== index
     
-    
+    //for unique value
+    // return array.indexOf(value) === index
     
 })
 
