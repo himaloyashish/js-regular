@@ -1,6 +1,6 @@
 
 const paymentSuccess = true;
-const marks = 79;
+const marks = 80;
 
 function enroll(callback) {
     console.log("course enrollment is enrollment ,please complete payment");
@@ -30,7 +30,11 @@ function getCertificates(){
     console.log("Congrats for your dedication");
 
     setTimeout(function(){
-        console.log("Now you are a grate software developer");
+        console.log("Now you are a great software developer");
     }, 1000)
 
 }
+
+enroll(function(){
+    progress(getCertificates)
+})
