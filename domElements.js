@@ -1,7 +1,7 @@
 const x = document.forms['frm1']
-console.log(x.length);
 
 let text = '';
+console.dir(x);
 
 for (let i = 0; i < x.length; i++) {
 
