@@ -1,13 +1,23 @@
 
-const setInt = setInterval(animate, 5)
+
 
 
 function animate (){
+    const elm = document.getElementById('animate')
+    const set = setInterval(ani, 5)
     let pos = 0;
-    pos++;
-
-    if(pos === 350){
-        
+    
+    function ani(){
+        if(pos < 350){
+            pos++;
+            elm.style.top= pos + "px";
+            elm.style.left= pos + "px";
+    
+        }else{
+            clearInterval(set)
+        }
     }
 
 }
+
+animate()
