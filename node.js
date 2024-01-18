@@ -7,3 +7,4 @@ const p1 = document.getElementById('p1')
 
 deep.insertBefore(node, p2 )
 // deep.removeChild(p1)
+// deep.removeChild(p1)
