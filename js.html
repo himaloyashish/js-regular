@@ -22,11 +22,14 @@
 </head>
 <body>
 
-    <div id="confirm"></div>
+
+    <!-- browser alert -->
+
+    <!-- <div id="confirm"></div>
     <div id="prompt"></div>
 
     <div>
-        <input type="button" value="confirm alert" onclick="alertShow()">
+        <input type="button" value="Show alert" onclick="alertShow()">
     </div>
 
     <div>
@@ -34,8 +37,31 @@
     </div>
 
     <div>
-        <input type="button" value="confirm alert" onclick="PromptShow()">
+        <input type="button" value="Prompt alert" onclick="PromptShow()">
+    </div> -->
+
+
+    <!-- setTimeOut and interval -->
+
+    <div id="timeOut"></div>
+    <div id="interval"></div>
+
+    <div>
+        <input type="button" value="interval" onclick="startTimeOut()">
     </div>
+
+    <div>
+        <input type="button" value="interval" onclick="stopTimeOut()">
+    </div>
+    
+    <div>
+        <input type="button" value="interval" onclick="startInterval()">
+    </div>
+
+    <div>
+        <input type="button" value="interval" onclick="stopInterval()">
+    </div>
+
 
     <script src="./popupBox.js"></script>
 </body>
