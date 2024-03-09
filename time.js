@@ -6,7 +6,7 @@ let intervalInstance;
 
 function startTimeOut() {
     timeInstance = setTimeout(function () {
-        timeOut.innerHTML = "3 seconds is over "
+        timeOut.innerHTML = "3 seconds is over"
     }, 3000);
 
 }
