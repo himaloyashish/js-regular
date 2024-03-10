@@ -1,4 +1,4 @@
-const worker = ''
+
 
 let i = 0;
 
