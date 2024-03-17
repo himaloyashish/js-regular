@@ -12,7 +12,8 @@ function startWorker() {
         }
 
         w.onmessage = function (event) {
-            document.getElementById("demo").innerHTML = event.data
+            console.log(event.data);
+            document.getElementById("demo").innerHTML = event.data;
         }
 
     } else {
