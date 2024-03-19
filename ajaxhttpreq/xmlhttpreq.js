@@ -1,18 +1,13 @@
+function loadData (){
 
-function loadData () {
-    
-    // create a new request
-    const xhr = new XMLHttpRequest();
-    
-    // what to do when response arrives
-    
-    xhr.onload = function () {
-        const div = document.getElementById("demo");
-        demo.innerHtml = xhr.responseText;
+    const xhr= new XMLHttpRequest()
 
+    xhr.onload = function (){
+        const container = document.getElementById("demo");
+        demo.innerHTML = xhr.responseText;
     }
 
     xhr.open("GET", "./data.txt");
     xhr.send();
-
+ 
 }
