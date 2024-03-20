@@ -7,7 +7,7 @@ function loadData (){
         demo.innerHTML = xhr.responseText;
     }
 
-    xhr.open("GET", "./data.txt");
+    xhr.open("GET", "./data.txt") ;
     xhr.send();
  
 }
