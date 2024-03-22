@@ -1,13 +1,13 @@
-function sendRequest() {
+function sendRequest(method, url) {
 
-    const promise = new Promise((method, url) => {
+    const promise = new Promise((resolve , reject) => {
         const xhr = new XMLHttpRequest();
 
         xhr.onload = function () {
-            console.log(xhr.responseText);
+            resolve(this.response);
         }
 
-        xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1");
+        xhr.open(method, url);
 
         xhr.responseType = "json";
 
@@ -19,6 +19,9 @@ function sendRequest() {
 }
 
 function getData() {
+    sendRequest().then(responseData =>{
+        console.log(responseData);
+    })
 
 }
 
