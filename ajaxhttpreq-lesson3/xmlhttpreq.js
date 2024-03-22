@@ -1,13 +1,25 @@
+function sendRequest() {
+
+    const promise = new Promise((method, url) => {
+        const xhr = new XMLHttpRequest();
+
+        xhr.onload = function () {
+            console.log(xhr.responseText);
+        }
+
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1");
+
+        xhr.responseType = "json";
+
+        xhr.send();
+    })
+
+    return promise;
+
+}
+
 function getData() {
-    const xhr = new XMLHttpRequest();
 
-    xhr.onload = function () {
-        console.log(xhr.responseText);
-    }
-
-    xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1");
-
-    xhr.send();
 }
 
 function sendData() {
