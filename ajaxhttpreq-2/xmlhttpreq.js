@@ -1,4 +1,5 @@
 function loadData(callbackFunction) {
+    console.log(callbackFunction);
 
     const xhr = new XMLHttpRequest()
 
@@ -22,5 +23,5 @@ function callbackFunction1(xhr) {
 
 function callbackFunction2(xhr) {
     const container = document.getElementById("demo2");
-    container.innerHTML = xhr.responseText;
+    demo.innerHTML = xhr.responseText;
 }
