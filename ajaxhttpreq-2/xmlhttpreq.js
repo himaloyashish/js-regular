@@ -1,5 +1,5 @@
 function loadData(callbackFunction) {
-    console.log(callbackFunction);
+    
 
     const xhr = new XMLHttpRequest()
 
