@@ -6,7 +6,7 @@ function sendRequest(method, url, data) {
         xhr.onload = function () {
 
             if (this.status >= 400) {
-                reject(`There was an application errors and the status is ${this.status} and the response text is ${this.statusText}`)
+                reject(`There was an application error and the status is ${this.status} and the response text is ${this.statusText}`)
             } else {
 
                 resolve(this.response);
