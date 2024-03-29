@@ -26,6 +26,7 @@ function sendRequest(method, url, data) {
     })
 
     return promise;
+    
 
 }
 
