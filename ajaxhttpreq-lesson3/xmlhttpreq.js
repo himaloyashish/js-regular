@@ -58,3 +58,15 @@ const getButton = document.getElementById("get");
 
 sendButton.addEventListener("click", sendData);
 getButton.addEventListener("click", getData);
+
+let cars = [
+     {Name: "abu", age:30}, 
+     {Name:"Asraful", age: 30}
+    ]
+
+for (let i = 0; i < cars.length; i++) {
+    const result = cars[i].Name
+    const age = cars[i].age
+    console.log(result, ":", age);
+  }
+
