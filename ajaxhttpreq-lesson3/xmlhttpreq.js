@@ -65,8 +65,8 @@ let cars = [
     ]
 
 for (let i = 0; i < cars.length; i++) {
-    const result = cars[i].Name
-    const age = cars[i].age
-    console.log(result, ":", age);
+    const result = cars[i]
+    // const age = cars[i]
+    console.log(result.Name, ":", result.age);
   }
 
