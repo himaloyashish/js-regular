@@ -67,6 +67,6 @@ let cars = [
 for (let i = 0; i < cars.length; i++) {
     const result = cars[i]
     // const age = cars[i]
-    console.log(result.Name, ":", result.age);
+    // console.log(result.Name, ":", result.age);
   }
 
