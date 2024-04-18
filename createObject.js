@@ -29,4 +29,4 @@ function Persons (){}
     Persons.prototype.name = "Ashish";
     Persons.prototype.age = 26;
 const ab = new Persons();
-console.log(ab.age); 
+console.log(ab.age);
