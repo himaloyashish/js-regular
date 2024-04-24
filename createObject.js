@@ -14,7 +14,7 @@ let vehicle = {
   
   var car = Object.create(vehicle, carProps);
 //   console.log(car);
-//   console.log("car");
+//   console.log("car"); 
 
 function Person (name){
     this.name = name;
